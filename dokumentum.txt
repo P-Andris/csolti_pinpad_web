@@ -1,0 +1,6 @@
+Feladatok:
+    Keress a forrásban polimorfizmust, megkülönböztetve az alábbi kettő esetet:
+        a) Ős típussal hivatkozunk gyerekre:
+            - 12.sor: 'public class PinBevitel extends javax.swing.JFrame'
+        b) Kasztolás (típuskényszerítés):
+            - 63. sor: 'int i = hanyadik((JButton)e.getSource())'

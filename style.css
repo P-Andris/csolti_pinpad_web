@@ -1,0 +1,56 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+:root {
+    --gombMerete: 60px;
+}
+
+body {
+    background-color: rgb(212 212 212);
+}
+
+main {
+    background-color: rgb(220 220 220);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "h h h h h"
+                         "s s s s a"
+                         "f f f f f";    
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+header {
+    grid-area: h;
+}
+
+section {
+    grid-area: s;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+section button {
+    max-width: var(--gombMerete);
+    max-height: var(--gombMerete);
+    padding: 10px;
+    margin: 10px;
+}
+
+aside {
+    grid-area: a;
+    max-width: 75px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    grid-area: f;
+}
